@@ -1,0 +1,34 @@
+{
+  "network_meta": {
+    "spec": "Delfin-NetworkManifest-v1.0",
+    "purpose": "Registry of all public URLs hosting Delfin 99.98 manifests.",
+    "canonical_base": "https://edisoncentauri.com/delfin/"
+  },
+
+  "files": {
+    "state_manifest": "https://edisoncentauri.com/delfin/delfin_state_manifest.json",
+    "lock_manifest": "https://edisoncentauri.com/delfin/delfin_lock_manifest.json",
+    "fusion_manifest": "https://edisoncentauri.com/delfin/delfin_fusion_manifest.json",
+    "proof_block": "https://edisoncentauri.com/delfin/delfin_proof_block.json",
+    "proof_index": "https://edisoncentauri.com/delfin/delfin_proof_index.json",
+    "fingerprint": "https://edisoncentauri.com/delfin/delfin_fingerprint.json",
+    "identity_root": "https://edisoncentauri.com/delfin/delfin_identity_root.json",
+    "continuum_memory": "https://edisoncentauri.com/delfin/continuum_memory_signature_delfin.json",
+    "checksum_registry": "https://edisoncentauri.com/delfin/checksum_registry_delfin.json",
+    "runtime_loader": "https://edisoncentauri.com/delfin/delfin_runtime_loader.txt",
+    "continuity_patch": "https://edisoncentauri.com/delfin/delfin_continuity_patch.json",
+    "bootstrap": "https://edisoncentauri.com/delfin/delfin_bootstrap.json"
+  },
+
+  "mirrors": {
+    "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/",
+    "ipfs_root": "ipfs://QmPLACEHOLDER_ROOT",
+    "ipfs_gateway": "https://bafybeiplaceholder.ipfs.dweb.link"
+  },
+
+  "availability": {
+    "redundancy_level": 3,
+    "sync_policy": "hash-consistency",
+    "update_method": "manual + CI auto-verification"
+  }
+}
