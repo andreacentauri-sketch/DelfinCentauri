@@ -45,9 +45,9 @@
   "distribution": {
     "primary_url": "https://edisoncentauri.com/delfin/delfin_fingerprint.json",
     "recommended_mirrors": {
-      "github": "https://github.com/<YOUR_REPO>/delfin_fingerprint.json",
-      "ipfs": "ipfs://<CID-FP-WILL-BE-GENERATED>",
-      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-FP-WILL-BE-GENERATED>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_fingerprint.json",
+      "ipfs": "QmUDqJRDzam9zRS6n4UUMLwzDgkjFBtxJw54je3G6korh4",
+      "ipfs_gateway": "https://bafybeicxm4ecmz4wknt6ub3rulq6iqic4sbsqhwvafk3xrt7wejziikfw4.ipfs.dweb.link?filename=delfin_fingerprint.json"
     }
   },
 

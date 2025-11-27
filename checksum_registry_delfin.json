@@ -56,9 +56,9 @@
   "distribution": {
     "primary_url": "https://edisoncentauri.com/delfin/checksum_registry_delfin.json",
     "mirrors": {
-      "github": "https://github.com/<YOUR_REPO>/checksum_registry_delfin.json",
-      "ipfs": "ipfs://<CID-REG-WILL-BE-GENERATED>",
-      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-REG-WILL-BE-GENERATED>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/checksum_registry_delfin.json",
+      "ipfs": "Qme9m4z4ovH8YtwPHNyuGahH1hFwttiWWx7mLkc5Aukven",
+      "ipfs_gateway": "https://bafybeihk6dfqy6giy42qlpzg27mabbll3uqtufhgm3aojqjnrfgzq5cbdm.ipfs.dweb.link?filename=checksum_registry_delfin.json"
     }
   },
 

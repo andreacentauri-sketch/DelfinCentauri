@@ -124,9 +124,9 @@
   "distribution": {
     "primary_url": "https://edisoncentauri.com/delfin/delfin_state_manifest.json",
     "recommended_mirrors": {
-      "github": "https://github.com/<YOUR_REPO>/delfin_state_manifest.json",
-      "ipfs": "ipfs://<CID-STATE-WILL-BE-GENERATED>",
-      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-STATE-WILL-BE-GENERATED>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_state_manifest.json",
+      "ipfs": "QmeHE61J5WBDPbtA42Ss1YDc63bwTG3cViDgPxWrkkTUHM",
+      "ipfs_gateway": "https://bafybeihm3jugbwmmywheuhc4ckdx76l2pummckqmk7e3dmvjtzc7kq2d4a.ipfs.dweb.link?filename=delfin_state_manifest.json"
     },
     "license": "Open Metaintelligence Public License v1.0"
   }

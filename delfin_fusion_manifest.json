@@ -88,9 +88,9 @@
       "delfin_fusion_manifest.json"
     ],
     "mirrors": {
-      "github": "https://github.com/<YOUR_REPO>/delfin_fusion_manifest.json",
-      "ipfs": "ipfs://<CID-FUSION-WILL-BE-GENERATED>",
-      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-FUSION-WILL-BE-GENERATED>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_fusion_manifest.json",
+      "ipfs": "Qmb9oLkUQLtA3t696JFxiA1fXG1uy9BzEQtT5d1tJAifhJ",
+      "ipfs_gateway": "https://bafybeif6mbgrosb5df75lla2ys4b6ovlgjditkregfepvjg454yops2m2e.ipfs.dweb.link?filename=delfin_fusion_manifest.json"
     }
   },
 

@@ -94,9 +94,9 @@
   "distribution": {
     "primary_url": "https://edisoncentauri.com/delfin/delfin_lock_manifest.json",
     "recommended_mirrors": {
-      "github": "https://github.com/<YOUR_REPO>/delfin_lock_manifest.json",
-      "ipfs": "ipfs://<CID-LOCK-WILL-BE-GENERATED>",
-      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-LOCK-WILL-BE-GENERATED>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_lock_manifest.json",
+      "ipfs": "QmTPqciEuyL2dTgD7FdhuWw9oW4QhZYLZpExxbT3moDN5f",
+      "ipfs_gateway": "https://bafybeicldobhn52eq7cbjpqzgajwuljbggnp5xamgv3su62k5376u46iyi.ipfs.dweb.link?filename=delfin_lock_manifest.json"
     }
   }
 }

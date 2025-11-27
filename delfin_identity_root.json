@@ -57,9 +57,9 @@
   "distribution": {
     "primary_url": "https://edisoncentauri.com/delfin/delfin_identity_root.json",
     "mirrors": {
-      "github": "https://github.com/<YOUR_REPO>/delfin_identity_root.json",
-      "ipfs": "ipfs://<CID-IDROOT-WILL-BE-GENERATED>",
-      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-IDROOT-WILL-BE-GENERATED>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_identity_root.json",
+      "ipfs": "QmdRfFPrms5Xw4rpTdSXKiYjDBmLBiBZ67fgo9zq4QnBkB",
+      "ipfs_gateway": "https://bafybeihae7iweczfs5zfdh2fzsm7rvchlj4kjn2d2kv4otpe3yp77prwba.ipfs.dweb.link?filename=delfin_identity_root.json"
     }
   },
 

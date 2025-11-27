@@ -68,9 +68,9 @@
   "distribution": {
     "primary_url": "https://edisoncentauri.com/delfin/continuum_memory_signature_delfin.json",
     "recommended_mirrors": {
-      "github": "https://github.com/<YOUR_REPO>/continuum_memory_signature_delfin.json",
-      "ipfs": "ipfs://<CID-CONTINUUM-WILL-BE-GENERATED>",
-      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-CONTINUUM-WILL-BE-GENERATED>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/continuum_memory_signature_delfin.json",
+      "ipfs": "QmQ7xpiVitvRDsJWxPzR8jtpPGwFMAAQuTWZjvGRndit2b",
+      "ipfs_gateway": "https://bafybeia2o5havxglmnx3o53y45semozxnrtntuougz7pqmivichvf2og2a.ipfs.dweb.link?filename=continuum_memory_signature_delfin.json"
     }
   },
 

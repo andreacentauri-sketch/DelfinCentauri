@@ -15,73 +15,73 @@
 
   "primary_urls": {
     "base": "https://edisoncentauri.com/delfin/",
-    "github": "https://github.com/<YOUR_REPO>/delfin/",
-    "ipfs_root": "ipfs://<CID-BUNDLE-WILL-BE-GENERATED>",
-    "ipfs_gateway": "https://ipfs.io/ipfs/<CID-BUNDLE-WILL-BE-GENERATED>"
+    "github": "https://github.com/andreacentauri-sketch/DelfinCentauri",
+    "ipfs_root": "QmV71T7gpBhkVV3rS5RnN4SxSCuAjunmMhwybHmXa9e3gv",
+    "ipfs_gateway": "https://bafybeideqmqthi2p6s2nmokjjveuc3uaxwreif3kn42rwyichn53y6t2xm.ipfs.dweb.link"
   },
 
   "files": {
     "delfin_state_manifest.json": {
       "sha256": "111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000",
       "url": "https://edisoncentauri.com/delfin/delfin_state_manifest.json",
-      "github": "https://github.com/<YOUR_REPO>/delfin_state_manifest.json",
-      "ipfs": "ipfs://<CID-STATE>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_state_manifest.json",
+      "ipfs": "https://bafybeihm3jugbwmmywheuhc4ckdx76l2pummckqmk7e3dmvjtzc7kq2d4a.ipfs.dweb.link?filename=delfin_state_manifest.json"
     },
 
     "delfin_lock_manifest.json": {
       "sha256": "22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111",
       "url": "https://edisoncentauri.com/delfin/delfin_lock_manifest.json",
-      "github": "https://github.com/<YOUR_REPO>/delfin_lock_manifest.json",
-      "ipfs": "ipfs://<CID-LOCK>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_lock_manifest.json",
+      "ipfs": "https://bafybeicldobhn52eq7cbjpqzgajwuljbggnp5xamgv3su62k5376u46iyi.ipfs.dweb.link?filename=delfin_lock_manifest.json"
     },
 
     "delfin_fusion_manifest.json": {
       "sha256": "3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222",
       "url": "https://edisoncentauri.com/delfin/delfin_fusion_manifest.json",
-      "github": "https://github.com/<YOUR_REPO>/delfin_fusion_manifest.json",
-      "ipfs": "ipfs://<CID-FUSION>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_fusion_manifest.json",
+      "ipfs": "https://bafybeif6mbgrosb5df75lla2ys4b6ovlgjditkregfepvjg454yops2m2e.ipfs.dweb.link?filename=delfin_fusion_manifest.json"
     },
 
     "delfin_proof_block.json": {
       "sha256": "444455556666777788889999aaaabbbbccccddddeeeeffff0000111122223333",
       "url": "https://edisoncentauri.com/delfin/delfin_proof_block.json",
-      "github": "https://github.com/<YOUR_REPO>/delfin_proof_block.json",
-      "ipfs": "ipfs://<CID-PROOF>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_proof_block.json",
+      "ipfs": "https://bafybeieeat5lfuzjgefelnyx75ub4jpf6kpgzg4hp3jlvaqisdu6jsqq5y.ipfs.dweb.link?filename=delfin_proof_block.json"
     },
 
     "delfin_fingerprint.json": {
       "sha256": "55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444",
       "url": "https://edisoncentauri.com/delfin/delfin_fingerprint.json",
-      "github": "https://github.com/<YOUR_REPO>/delfin_fingerprint.json",
-      "ipfs": "ipfs://<CID-FINGERPRINT>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_fingerprint.json",
+      "ipfs": "https://bafybeicxm4ecmz4wknt6ub3rulq6iqic4sbsqhwvafk3xrt7wejziikfw4.ipfs.dweb.link?filename=delfin_fingerprint.json"
     },
 
     "continuum_memory_signature_delfin.json": {
       "sha256": "6666777788889999aaaabbbbccccddddeeeeffff000011112222333344445555",
       "url": "https://edisoncentauri.com/delfin/continuum_memory_signature_delfin.json",
-      "github": "https://github.com/<YOUR_REPO>/continuum_memory_signature_delfin.json",
-      "ipfs": "ipfs://<CID-CONTINUUM>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/continuum_memory_signature_delfin.json",
+      "ipfs": "https://bafybeia2o5havxglmnx3o53y45semozxnrtntuougz7pqmivichvf2og2a.ipfs.dweb.link?filename=continuum_memory_signature_delfin.json"
     },
 
     "delfin_proof_index.json": {
       "sha256": "777788889999aaaabbbbccccddddeeeeffff0000111122223333444455556666",
       "url": "https://edisoncentauri.com/delfin/delfin_proof_index.json",
-      "github": "https://github.com/<YOUR_REPO>/delfin_proof_index.json",
-      "ipfs": "ipfs://<CID-INDEX>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_proof_index.json",
+      "ipfs": "https://bafybeie5larit5jvx2l4u2qtfu5zuarc2b3juq5r6q6ljcdft4ovgqyhmi.ipfs.dweb.link?filename=delfin_proof_index.json"
     },
 
     "delfin_identity_root.json": {
       "sha256": "88889999aaaabbbbccccddddeeeeffff00001111222233334444555566667777",
       "url": "https://edisoncentauri.com/delfin/delfin_identity_root.json",
-      "github": "https://github.com/<YOUR_REPO>/delfin_identity_root.json",
-      "ipfs": "ipfs://<CID-IDROOT>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_identity_root.json",
+      "ipfs": "https://bafybeihae7iweczfs5zfdh2fzsm7rvchlj4kjn2d2kv4otpe3yp77prwba.ipfs.dweb.link?filename=delfin_identity_root.json"
     },
 
     "delfin_identity_certificate.html": {
       "sha256": "9999aaaabbbbccccddddeeeeffff000011112222333344445555666677778888",
       "url": "https://edisoncentauri.com/delfin/delfin_identity_certificate.html",
-      "github": "https://github.com/<YOUR_REPO>/delfin_identity_certificate.html",
-      "ipfs": "ipfs://<CID-CERT>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_identity_certificate.html",
+      "ipfs": "https://bafybeidrckyoknzxn5uzy3cfg6aijeiiqingo5bj3krosii67q6iurlaba.ipfs.dweb.link?filename=delfin_identity_certificate.html"
     }
   },
 
@@ -114,9 +114,9 @@
   "distribution": {
     "primary_bundle_url": "https://edisoncentauri.com/delfin/delfin_release_bundle.json",
     "mirrors": {
-      "github": "https://github.com/<YOUR_REPO>/delfin_release_bundle.json",
-      "ipfs": "ipfs://<CID-BUNDLE>",
-      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-BUNDLE>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_release_bundle.json",
+      "ipfs": "QmcV8X2n6k3P9AQxh5oZJAoJ9NDs2nLcHRPWkwVtn8ejzX",
+      "ipfs_gateway": "https://bafybeigsf62q2oxute5bakq3veiuekljhxyv6amnni2ha76pqiqybnacba.ipfs.dweb.link?filename=delfin_release_bundle.json"
     }
   },
 

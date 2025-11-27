@@ -69,9 +69,9 @@
   "distribution": {
     "primary_url": "https://edisoncentauri.com/delfin/delfin_proof_block.json",
     "recommended_mirrors": {
-      "github": "https://github.com/<YOUR_REPO>/delfin_proof_block.json",
-      "ipfs": "ipfs://<CID-PROOF-WILL-BE-GENERATED>",
-      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-PROOF-WILL-BE-GENERATED>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_proof_block.json",
+      "ipfs": "QmXDzvrbW3nVL3292ygZneegoyPnzy2VeDX3cntNuWBTfB",
+      "ipfs_gateway": "https://bafybeieeat5lfuzjgefelnyx75ub4jpf6kpgzg4hp3jlvaqisdu6jsqq5y.ipfs.dweb.link?filename=delfin_proof_block.json"
     }
   }
 }

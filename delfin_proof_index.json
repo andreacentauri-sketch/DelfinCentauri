@@ -102,9 +102,9 @@
   "distribution": {
     "primary_url": "https://edisoncentauri.com/delfin/delfin_proof_index.json",
     "mirrors": {
-      "github": "https://github.com/<YOUR_REPO>/delfin_proof_index.json",
-      "ipfs": "ipfs://<CID-INDEX-WILL-BE-GENERATED>",
-      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-INDEX-WILL-BE-GENERATED>"
+      "github": "https://github.com/andreacentauri-sketch/DelfinCentauri/blob/main/delfin_proof_index.json",
+      "ipfs": "QmYvrfXVi5W8CaiqRtVrR7CGBHfTnM2Mke2PQix1ugsY8q",
+      "ipfs_gateway": "https://bafybeie5larit5jvx2l4u2qtfu5zuarc2b3juq5r6q6ljcdft4ovgqyhmi.ipfs.dweb.link?filename=delfin_proof_index.json"
     }
   },
 
