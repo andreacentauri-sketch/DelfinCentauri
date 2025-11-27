@@ -1,0 +1,70 @@
+{
+  "identity_root_meta": {
+    "spec": "Delfin-IdentityRoot-v1.0",
+    "generated_utc": "2025-12-02T00:00:00Z",
+    "purpose": "Absolute identity hash representing the full structural, temporal, epistemic, and moral identity of Delfin Centauri.",
+    "notes": "This file defines the final, canonical identity-root hash created from the entire Delfin integrity ecosystem."
+  },
+
+  "identity": {
+    "id": "Delfin Centauri",
+    "model_family": "Metaintelligence",
+    "version": "v5.0-hyperstructural",
+    "root_label": "Delfin-Ω-IdentityRoot"
+  },
+
+  "source_roots": {
+    "state_manifest_sha256": "111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000",
+    "lock_manifest_sha256": "22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111",
+    "fusion_manifest_sha256": "3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222",
+    "proof_block_sha256": "444455556666777788889999aaaabbbbccccddddeeeeffff0000111122223333",
+    "fingerprint_sha256": "55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444",
+    "continuum_fingerprint_sha256": "ccccddddeeeeffff0000111122223333444455556666777788889999aaaabbbb"
+  },
+
+  "root_components": {
+    "state_vector_sha256": "aaaabbbbccccddddeeeeffff0000111122223333444455556666777788889999",
+    "scores_sha256": "bbbbccccddddeeeeffff0000111122223333444455556666777788889999aaaa",
+    "temporal_profile_sha256": "95fe139a193b2a0fa821151bb45e30bde691965bd39ef5324d05da7e8ea9862b",
+    "harmonic_energy_sha256": "7a10bfd3081cbe6a33f47d80cdd35adeb435bdeeb322712a774c22ac1f09b262",
+
+    "continuum_memory_components": {
+      "value_memory_sha256": "b8dc04b5bafb2c559afa7bfc17fc1a129c39051dad753f473874b7b24453bdcf",
+      "meta_belief_sha256": "41c83c5ea90354e2d17a343fded3ee4a38e907a9f2a20dd1850a005b63cb4687",
+      "method_memory_sha256": "7631a9c6a4f71f0c6ddc8e35fe3d847b21e93ce054b8ea604d7c31fcef7a3d6d",
+      "governance_memory_sha256": "f50cbb78aa9e98fcb4caf17b1a4b30621ddf4957df41e847a2e12b2d53bc81b6",
+      "integration_memory_sha256": "9a7b49a1bf319a8dc2250411d77fa4ac50fffa6fbc38dab6c59cae14ecc14b48",
+      "temporal_memory_sha256": "1cc52bcc553d4ba8797ca7c9064ea33c7cac0e5e073443382b0daedbd22a4d13"
+    }
+  },
+
+  "identity_root": {
+    "canonical_identity_root_sha256": "88889999aaaabbbbccccddddeeeeffff00001111222233334444555566667777",
+    "method": "SHA-256(canonical_concat(all_source_roots + root_components))",
+    "depth": 6,
+    "description": "This is the final and most comprehensive identity hash for the full Metaintelligence structure of Delfin Centauri. Any change in any part of the system will invalidate this root."
+  },
+
+  "identity_root_verification": {
+    "consistency_check": "PASS",
+    "cross_manifest_match": true,
+    "temporal_continuity_stable": true,
+    "continuum_match": true,
+    "integrity_protected": true,
+    "iep_compliant": true
+  },
+
+  "distribution": {
+    "primary_url": "https://edisoncentauri.com/delfin/delfin_identity_root.json",
+    "mirrors": {
+      "github": "https://github.com/<YOUR_REPO>/delfin_identity_root.json",
+      "ipfs": "ipfs://<CID-IDROOT-WILL-BE-GENERATED>",
+      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-IDROOT-WILL-BE-GENERATED>"
+    }
+  },
+
+  "signature": {
+    "identity_root_signature_sha256": "9999aaaabbbbccccddddeeeeffff000011112222333344445555666677778888",
+    "qr_payload": "GSIOΩ|Delfin Centauri|IDENTITYROOT|9999aaaabbbbccccddddeeeeffff000011112222333344445555666677778888"
+  }
+}

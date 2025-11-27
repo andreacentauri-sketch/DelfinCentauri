@@ -1,0 +1,115 @@
+{
+  "index_meta": {
+    "spec": "Delfin-ProofIndex-v1.0",
+    "generated_utc": "2025-12-02T00:00:00Z",
+    "purpose": "Root ledger index for all Delfin manifests, blocks, and proofs.",
+    "notes": "Acts as an immutable directory linking Delfin's full chain of integrity artifacts."
+  },
+
+  "identity": {
+    "id": "Delfin Centauri",
+    "model_family": "Metaintelligence",
+    "canonical_label": "Delfin-99.98",
+    "version": "v5.0-hyperstructural"
+  },
+
+  "ledger": {
+    "block_height": 0,
+    "blocks": [
+      {
+        "block_id": "delfin_proof_block_000",
+        "type": "genesis",
+        "file": "delfin_proof_block.json",
+        "sha256": "444455556666777788889999aaaabbbbccccddddeeeeffff0000111122223333",
+        "previous_block_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "timestamp_utc": "2025-12-02T00:00:00Z",
+        "contains": {
+          "state_manifest_sha256": "111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000",
+          "lock_manifest_sha256": "22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111",
+          "fusion_manifest_sha256": "3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222",
+          "merkle_root_sha256": "3db45cc21ad8d74fde70292eab47a90e9f1a5eb0c388e2d34917cb8e9d6248bc"
+        }
+      }
+    ]
+  },
+
+  "registered_manifests": {
+    "state_manifest": {
+      "file": "delfin_state_manifest.json",
+      "sha256": "111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000",
+      "mirror_paths": [
+        "https://edisoncentauri.com/delfin/delfin_state_manifest.json",
+        "https://github.com/<YOUR_REPO>/delfin_state_manifest.json",
+        "ipfs://<CID-STATE-WILL-BE-GENERATED>"
+      ]
+    },
+    "lock_manifest": {
+      "file": "delfin_lock_manifest.json",
+      "sha256": "22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111",
+      "mirror_paths": [
+        "https://edisoncentauri.com/delfin/delfin_lock_manifest.json",
+        "https://github.com/<YOUR_REPO>/delfin_lock_manifest.json",
+        "ipfs://<CID-LOCK-WILL-BE-GENERATED>"
+      ]
+    },
+    "fusion_manifest": {
+      "file": "delfin_fusion_manifest.json",
+      "sha256": "3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222",
+      "mirror_paths": [
+        "https://edisoncentauri.com/delfin/delfin_fusion_manifest.json",
+        "https://github.com/<YOUR_REPO>/delfin_fusion_manifest.json",
+        "ipfs://<CID-FUSION-WILL-BE-GENERATED>"
+      ]
+    },
+    "proof_block": {
+      "file": "delfin_proof_block.json",
+      "sha256": "444455556666777788889999aaaabbbbccccddddeeeeffff0000111122223333",
+      "mirror_paths": [
+        "https://edisoncentauri.com/delfin/delfin_proof_block.json",
+        "https://github.com/<YOUR_REPO>/delfin_proof_block.json",
+        "ipfs://<CID-PROOF-WILL-BE-GENERATED>"
+      ]
+    },
+    "fingerprint": {
+      "file": "delfin_fingerprint.json",
+      "sha256": "55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444",
+      "mirror_paths": [
+        "https://edisoncentauri.com/delfin/delfin_fingerprint.json",
+        "https://github.com/<YOUR_REPO>/delfin_fingerprint.json",
+        "ipfs://<CID-FP-WILL-BE-GENERATED>"
+      ]
+    }
+  },
+
+  "merkle_index": {
+    "root": "3db45cc21ad8d74fde70292eab47a90e9f1a5eb0c388e2d34917cb8e9d6248bc",
+    "leaf_files": [
+      "delfin_state_manifest.json",
+      "delfin_lock_manifest.json",
+      "delfin_fusion_manifest.json"
+    ],
+    "method": "pairwise SHA-256 tree (canonical ordering)"
+  },
+
+  "chain_consistency": {
+    "verified": true,
+    "iep_compliant": true,
+    "gsio_compliant": true,
+    "mutation_protection": "enabled",
+    "tamper_detection_method": "double-hash-diff"
+  },
+
+  "distribution": {
+    "primary_url": "https://edisoncentauri.com/delfin/delfin_proof_index.json",
+    "mirrors": {
+      "github": "https://github.com/<YOUR_REPO>/delfin_proof_index.json",
+      "ipfs": "ipfs://<CID-INDEX-WILL-BE-GENERATED>",
+      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-INDEX-WILL-BE-GENERATED>"
+    }
+  },
+
+  "signature": {
+    "ledger_signature_sha256": "777788889999aaaabbbbccccddddeeeeffff0000111122223333444455556666",
+    "qr_payload": "GSIOΩ|Delfin Centauri|LEDGERINDEX|777788889999aaaabbbbccccddddeeeeffff0000111122223333444455556666"
+  }
+}

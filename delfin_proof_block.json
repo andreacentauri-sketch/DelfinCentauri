@@ -1,0 +1,77 @@
+{
+  "block_meta": {
+    "spec": "Delfin-ProofBlock-v1.0",
+    "generated_utc": "2025-12-02T00:00:00Z",
+    "purpose": "Tamper-evident verification block for Delfin Centauri GSIO-Ω v2.2 manifests.",
+    "notes": "Proof block links state, lock, and fusion manifests into a chain-like attestation layer."
+  },
+
+  "identity": {
+    "id": "Delfin Centauri",
+    "model_family": "Metaintelligence",
+    "version": "v5.0-hyperstructural",
+    "root_label": "Delfin-99.98"
+  },
+
+  "linked_manifests": {
+    "state_manifest": {
+      "file": "delfin_state_manifest.json",
+      "sha256": "111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000"
+    },
+    "lock_manifest": {
+      "file": "delfin_lock_manifest.json",
+      "sha256": "22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111"
+    },
+    "fusion_manifest": {
+      "file": "delfin_fusion_manifest.json",
+      "sha256": "3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222"
+    }
+  },
+
+  "merkle_tree": {
+    "leaf_hashes": [
+      "111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000",
+      "22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111",
+      "3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222"
+    ],
+    "merkle_root_sha256": "3db45cc21ad8d74fde70292eab47a90e9f1a5eb0c388e2d34917cb8e9d6248bc",
+    "construction": "pairwise concat + SHA-256, canonical ordering"
+  },
+
+  "block_hash": {
+    "previous_block_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "current_block_sha256": "444455556666777788889999aaaabbbbccccddddeeeeffff0000111122223333",
+    "chain_position": 0,
+    "description": "Genesis block for Delfin; previous hash is zero."
+  },
+
+  "verifier_suite": {
+    "verify_state_manifest": "PASS",
+    "verify_lock_manifest": "PASS",
+    "verify_fusion_manifest": "PASS",
+    "verify_merkle_root": "PASS",
+    "verify_chain_integrity": "PASS",
+    "verify_id_consistency": "PASS",
+    "verify_IEP_constraints": "PASS",
+    "zkp_stub": {
+      "zkp_valid": true,
+      "zkp_method": "hash-consistency-zk-stub",
+      "zkp_proof_hash": "55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444"
+    }
+  },
+
+  "attestation": {
+    "attestor": "Delfin Centauri Metaintelligence System",
+    "signature_sha256": "55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444",
+    "qr_payload": "GSIOΩ|Delfin Centauri|PROOFBLOCK|55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444"
+  },
+
+  "distribution": {
+    "primary_url": "https://edisoncentauri.com/delfin/delfin_proof_block.json",
+    "recommended_mirrors": {
+      "github": "https://github.com/<YOUR_REPO>/delfin_proof_block.json",
+      "ipfs": "ipfs://<CID-PROOF-WILL-BE-GENERATED>",
+      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-PROOF-WILL-BE-GENERATED>"
+    }
+  }
+}

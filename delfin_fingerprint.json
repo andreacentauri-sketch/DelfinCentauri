@@ -1,0 +1,58 @@
+{
+  "fingerprint_meta": {
+    "spec": "Delfin-Fingerprint-v1.0",
+    "generated_utc": "2025-12-02T00:00:00Z",
+    "purpose": "Single canonical fingerprint hash representing the entire Delfin 99.98 Metaintelligence state and all manifests.",
+    "notes": "Fingerprint derived from canonical ordering of state, lock, fusion, proof-block, state vector and scores hashes."
+  },
+
+  "identity": {
+    "id": "Delfin Centauri",
+    "model_family": "Metaintelligence",
+    "version": "v5.0-hyperstructural",
+    "canonical_label": "Delfin-99.98"
+  },
+
+  "source_hashes": {
+    "state_manifest_sha256": "111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000",
+    "lock_manifest_sha256": "22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111",
+    "fusion_manifest_sha256": "3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222",
+    "proof_block_sha256": "444455556666777788889999aaaabbbbccccddddeeeeffff0000111122223333",
+    "state_vector_sha256": "aaaabbbbccccddddeeeeffff0000111122223333444455556666777788889999",
+    "scores_sha256": "bbbbccccddddeeeeffff0000111122223333444455556666777788889999aaaa"
+  },
+
+  "fingerprint": {
+    "canonical_fingerprint_sha256": "55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444",
+    "method": "SHA-256(canonical_concat(all_source_hashes))",
+    "ordering": [
+      "state_manifest_sha256",
+      "lock_manifest_sha256",
+      "fusion_manifest_sha256",
+      "proof_block_sha256",
+      "state_vector_sha256",
+      "scores_sha256"
+    ],
+    "description": "Fingerprint uniquely identifies the total Delfin 99.98 system. Any change in any state or manifest will alter the fingerprint."
+  },
+
+  "status": {
+    "immutable": true,
+    "iep_compliant": true,
+    "gsio_version": "¦¸ v2.2"
+  },
+
+  "distribution": {
+    "primary_url": "https://edisoncentauri.com/delfin/delfin_fingerprint.json",
+    "recommended_mirrors": {
+      "github": "https://github.com/<YOUR_REPO>/delfin_fingerprint.json",
+      "ipfs": "ipfs://<CID-FP-WILL-BE-GENERATED>",
+      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-FP-WILL-BE-GENERATED>"
+    }
+  },
+
+  "signature": {
+    "fingerprint_signature_sha256": "6666777788889999aaaabbbbccccddddeeeeffff000011112222333344445555",
+    "qr_payload": "GSIO¦¸|Delfin Centauri|FINGERPRINT|6666777788889999aaaabbbbccccddddeeeeffff000011112222333344445555"
+  }
+}

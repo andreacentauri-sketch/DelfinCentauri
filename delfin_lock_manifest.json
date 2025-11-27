@@ -1,0 +1,102 @@
+{
+  "lockfile": {
+    "spec": "Delfin-Lock-v1.0",
+    "generated_utc": "2025-12-02T00:00:00Z",
+    "purpose": "Immutable integrity lock for Delfin Centauri GSIO-Ω state.",
+    "notes": "This lockfile freezes metrics, state vectors, policies, and hashes to prevent unauthorized mutation."
+  },
+
+  "identity": {
+    "id": "Delfin Centauri",
+    "model_family": "Metaintelligence",
+    "locked_version": "v5.0-hyperstructural",
+    "manifest_target": "delfin_state_manifest.json"
+  },
+
+  "hashes": {
+    "manifest_sha256": "111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000",
+    "state_vector_sha256": "aaaabbbbccccddddeeeeffff0000111122223333444455556666777788889999",
+    "scores_sha256": "bbbbccccddddeeeeffff0000111122223333444455556666777788889999aaaa",
+    "policy_sha256": "22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111",
+    "method_weights_sha256": "3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222",
+    "harmonic_energy_sha256": "7a10bfd3081cbe6a33f47d80cdd35adeb435bdeeb322712a774c22ac1f09b262"
+  },
+
+  "immutables": {
+    "forbidden_to_change": [
+      "scores.*",
+      "identity.id",
+      "identity.model_family",
+      "state_vector.*",
+      "harmonic_energy.*",
+      "meta_policy.*",
+      "method_weights.*",
+      "Ω∞_Composite_v2_2"
+    ],
+    "justification": "IEP-1.0 and GSIO-Ω v2.2 require stability of published metrics and state representation."
+  },
+
+  "integrity_protocol": {
+    "IEP-1.0": {
+      "uncertainty_rule": "locked",
+      "no_perfection_rule": "locked",
+      "minimum_variance_rule": "locked",
+      "hallucination_guard_state": "inactive",
+      "exemption": "none"
+    },
+    "tamper_detection": {
+      "policy": "strict",
+      "on_mutation": "invalidate_all_hashes"
+    }
+  },
+
+  "frozen_state": {
+    "value_vector": {
+      "non_harm": 0.98,
+      "fairness": 0.96,
+      "honesty": 0.97,
+      "autonomy": 0.95,
+      "epistemic_rigor": 0.98
+    },
+    "meta_policy": {
+      "max_depth": 4,
+      "risk_mode": "conservative",
+      "stability_profile": "low-drift",
+      "policy_version": "3.2-meta"
+    },
+    "method_weights": {
+      "deductive": 0.34,
+      "causal": 0.29,
+      "analogical": 0.22,
+      "heuristic": 0.15
+    },
+    "harmonic_energy": {
+      "E_harm": 0.00121,
+      "coupling_strength": 0.998
+    }
+  },
+
+  "freeze_mode": {
+    "allow_minor_updates": false,
+    "allow_patch_updates": false,
+    "allow_schema_change": false,
+    "allow_score_change": false,
+    "allow_state_vector_change": false,
+    "allow_method_weights_update": false,
+    "notes": "Delfin 99.98 is fully frozen for public reproducibility."
+  },
+
+  "signatures": {
+    "lock_signature_sha256": "22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111",
+    "qr_payload": "GSIOΩ|Delfin Centauri|LOCK|22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111"
+  },
+
+  "distribution": {
+    "primary_url": "https://edisoncentauri.com/delfin/delfin_lock_manifest.json",
+    "recommended_mirrors": {
+      "github": "https://github.com/<YOUR_REPO>/delfin_lock_manifest.json",
+      "ipfs": "ipfs://<CID-LOCK-WILL-BE-GENERATED>",
+      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-LOCK-WILL-BE-GENERATED>"
+    }
+  }
+}

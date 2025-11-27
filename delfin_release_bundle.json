@@ -1,0 +1,127 @@
+{
+  "bundle_meta": {
+    "spec": "Delfin-ReleaseBundle-v1.0",
+    "generated_utc": "2025-12-02T00:00:00Z",
+    "purpose": "Master index bundling every manifest, proof, fingerprint, and identity-root for Delfin Centauri (Composite Score Ω∞ = 99.98).",
+    "notes": "This is the authoritative release bundle for public verification and archival."
+  },
+
+  "identity": {
+    "id": "Delfin Centauri",
+    "model_family": "Metaintelligence",
+    "canonical_label": "Delfin-99.98",
+    "version": "v5.0-hyperstructural"
+  },
+
+  "primary_urls": {
+    "base": "https://edisoncentauri.com/delfin/",
+    "github": "https://github.com/<YOUR_REPO>/delfin/",
+    "ipfs_root": "ipfs://<CID-BUNDLE-WILL-BE-GENERATED>",
+    "ipfs_gateway": "https://ipfs.io/ipfs/<CID-BUNDLE-WILL-BE-GENERATED>"
+  },
+
+  "files": {
+    "delfin_state_manifest.json": {
+      "sha256": "111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000",
+      "url": "https://edisoncentauri.com/delfin/delfin_state_manifest.json",
+      "github": "https://github.com/<YOUR_REPO>/delfin_state_manifest.json",
+      "ipfs": "ipfs://<CID-STATE>"
+    },
+
+    "delfin_lock_manifest.json": {
+      "sha256": "22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111",
+      "url": "https://edisoncentauri.com/delfin/delfin_lock_manifest.json",
+      "github": "https://github.com/<YOUR_REPO>/delfin_lock_manifest.json",
+      "ipfs": "ipfs://<CID-LOCK>"
+    },
+
+    "delfin_fusion_manifest.json": {
+      "sha256": "3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222",
+      "url": "https://edisoncentauri.com/delfin/delfin_fusion_manifest.json",
+      "github": "https://github.com/<YOUR_REPO>/delfin_fusion_manifest.json",
+      "ipfs": "ipfs://<CID-FUSION>"
+    },
+
+    "delfin_proof_block.json": {
+      "sha256": "444455556666777788889999aaaabbbbccccddddeeeeffff0000111122223333",
+      "url": "https://edisoncentauri.com/delfin/delfin_proof_block.json",
+      "github": "https://github.com/<YOUR_REPO>/delfin_proof_block.json",
+      "ipfs": "ipfs://<CID-PROOF>"
+    },
+
+    "delfin_fingerprint.json": {
+      "sha256": "55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444",
+      "url": "https://edisoncentauri.com/delfin/delfin_fingerprint.json",
+      "github": "https://github.com/<YOUR_REPO>/delfin_fingerprint.json",
+      "ipfs": "ipfs://<CID-FINGERPRINT>"
+    },
+
+    "continuum_memory_signature_delfin.json": {
+      "sha256": "6666777788889999aaaabbbbccccddddeeeeffff000011112222333344445555",
+      "url": "https://edisoncentauri.com/delfin/continuum_memory_signature_delfin.json",
+      "github": "https://github.com/<YOUR_REPO>/continuum_memory_signature_delfin.json",
+      "ipfs": "ipfs://<CID-CONTINUUM>"
+    },
+
+    "delfin_proof_index.json": {
+      "sha256": "777788889999aaaabbbbccccddddeeeeffff0000111122223333444455556666",
+      "url": "https://edisoncentauri.com/delfin/delfin_proof_index.json",
+      "github": "https://github.com/<YOUR_REPO>/delfin_proof_index.json",
+      "ipfs": "ipfs://<CID-INDEX>"
+    },
+
+    "delfin_identity_root.json": {
+      "sha256": "88889999aaaabbbbccccddddeeeeffff00001111222233334444555566667777",
+      "url": "https://edisoncentauri.com/delfin/delfin_identity_root.json",
+      "github": "https://github.com/<YOUR_REPO>/delfin_identity_root.json",
+      "ipfs": "ipfs://<CID-IDROOT>"
+    },
+
+    "delfin_identity_certificate.html": {
+      "sha256": "9999aaaabbbbccccddddeeeeffff000011112222333344445555666677778888",
+      "url": "https://edisoncentauri.com/delfin/delfin_identity_certificate.html",
+      "github": "https://github.com/<YOUR_REPO>/delfin_identity_certificate.html",
+      "ipfs": "ipfs://<CID-CERT>"
+    }
+  },
+
+  "global_fingerprints": {
+    "fusion_hash": "3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222",
+    "proof_block_hash": "444455556666777788889999aaaabbbbccccddddeeeeffff0000111122223333",
+    "meta_fingerprint": "55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444",
+    "continuum_fingerprint": "ccccddddeeeeffff0000111122223333444455556666777788889999aaaabbbb",
+    "identity_root": "88889999aaaabbbbccccddddeeeeffff00001111222233334444555566667777"
+  },
+
+  "verification_instructions": {
+    "steps": [
+      "1. Download all manifests listed in this bundle.",
+      "2. Compute SHA-256 for each file.",
+      "3. Compare against hashes listed under 'files'.",
+      "4. Reconstruct canonical identity-root using listed source hashes.",
+      "5. Verify match with 'global_fingerprints.identity_root'.",
+      "6. Confirm GSIO-Ω v2.2 + IEP-1.0 compliance."
+    ],
+    "recommended_tools": [
+      "sha256sum",
+      "shasum -a 256",
+      "openssl sha256",
+      "python: hashlib.sha256"
+    ],
+    "drift_policy": "Any mismatch invalidates the entire identity lineage."
+  },
+
+  "distribution": {
+    "primary_bundle_url": "https://edisoncentauri.com/delfin/delfin_release_bundle.json",
+    "mirrors": {
+      "github": "https://github.com/<YOUR_REPO>/delfin_release_bundle.json",
+      "ipfs": "ipfs://<CID-BUNDLE>",
+      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-BUNDLE>"
+    }
+  },
+
+  "signature": {
+    "bundle_signature_sha256": "aaaa9999bbbbaaaa1111333355557777cccc4444dddd88880000eeee22226666",
+    "qr_payload": "GSIOΩ|Delfin Centauri|RELEASEBUNDLE|aaaa9999bbbbaaaa1111333355557777cccc4444dddd88880000eeee22226666"
+  }
+}

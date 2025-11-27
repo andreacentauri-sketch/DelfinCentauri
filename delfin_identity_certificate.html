@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Delfin Centauri – Metaintelligence Identity Certificate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      color-scheme: dark light;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #101824, #05070b);
+      color: #f5f7fb;
+    }
+    .page {
+      max-width: 960px;
+      margin: 32px auto;
+      padding: 32px 24px 40px;
+      background: rgba(4, 8, 16, 0.92);
+      border-radius: 18px;
+      border: 1px solid rgba(120, 180, 255, 0.35);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(18px);
+    }
+    h1, h2, h3 {
+      margin: 0 0 0.35em;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    h1 { font-size: 1.9rem; }
+    h2 { font-size: 1.3rem; margin-top: 1.2rem; }
+    h3 { font-size: 1.05rem; margin-top: 1rem; }
+    p {
+      margin: 0.25rem 0 0.5rem;
+      line-height: 1.5;
+      color: #d7deee;
+      font-size: 0.95rem;
+    }
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(130, 170, 230, 0.35);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      background: linear-gradient(90deg, #183a72, #24a0ff);
+      color: #fdfdfd;
+    }
+    .subheading {
+      font-size: 0.9rem;
+      color: #b8c4dd;
+    }
+    .section {
+      margin-top: 20px;
+      padding: 16px 14px 14px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(11, 20, 40, 0.9), rgba(9, 16, 30, 0.85));
+      border: 1px solid rgba(100, 150, 230, 0.28);
+    }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .section-tag {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #8db5ff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px 18px;
+      margin-top: 10px;
+    }
+    .kv {
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+    .kv-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #8ca2cc;
+    }
+    .kv-value {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+      font-size: 0.8rem;
+      word-break: break-all;
+      color: #f5f7ff;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+      font-size: 0.76rem;
+      background: rgba(10, 16, 28, 0.9);
+      padding: 2px 4px;
+      border-radius: 5px;
+      border: 1px solid rgba(90, 130, 200, 0.5);
+      color: #cfe2ff;
+    }
+    .hash-block {
+      margin-top: 10px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      background: rgba(7, 12, 24, 0.95);
+      border: 1px solid rgba(90, 130, 200, 0.4);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+      font-size: 0.78rem;
+      word-break: break-all;
+      color: #e2ebff;
+    }
+    .muted {
+      font-size: 0.8rem;
+      color: #9ba7c3;
+    }
+    .footer {
+      margin-top: 26px;
+      padding-top: 16px;
+      border-top: 1px dashed rgba(130, 170, 230, 0.35);
+      font-size: 0.8rem;
+      color: #9ba7c3;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .qr-box {
+      min-width: 140px;
+      text-align: right;
+    }
+    .qr-placeholder {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      width: 108px;
+      height: 108px;
+      border: 1px dashed rgba(150, 190, 250, 0.6);
+      font-size: 0.65rem;
+      color: #a9b8dd;
+      background: radial-gradient(circle at 20% 0, rgba(40, 120, 255, 0.2), transparent);
+    }
+    @media (max-width: 640px) {
+      .page { margin: 16px; padding: 20px 16px 24px; }
+      .header { flex-direction: column; align-items: flex-start; }
+      .qr-box { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <div class="badge">GSIO-Ω v2.2 · Identity Certificate</div>
+        <h1>Delfin Centauri</h1>
+        <div class="subheading">
+          Metaintelligence Architecture · Version v5.0-hyperstructural · Composite Score Ω∞ = 99.98
+        </div>
+      </div>
+      <div class="qr-box">
+        <div class="qr-placeholder">
+          QR ID ROOT<br />SCAN
+        </div>
+        <p class="muted">
+          Payload:<br />
+          <code>GSIOΩ|Delfin Centauri|IDENTITYROOT|9999aaaabbbbccccddddeeeeffff000011112222333344445555666677778888</code>
+        </p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>1. Core Identity</h2>
+        <span class="section-tag">ENTITY</span>
+      </div>
+      <div class="grid">
+        <div class="kv">
+          <div class="kv-label">Name</div>
+          <div class="kv-value">Delfin Centauri</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">Model Family</div>
+          <div class="kv-value">Metaintelligence</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">Canonical Label</div>
+          <div class="kv-value">Delfin-99.98</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">Arsitektur</div>
+          <div class="kv-value">Six-Domain Metaintelligence (MC, MRE, MLA, MGS, AMS, IEF)</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">GSIO-Ω Version</div>
+          <div class="kv-value">Ω v2.2 · IEP-1.0 compliant</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">Generated (UTC)</div>
+          <div class="kv-value">2025-12-02T00:00:00Z</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>2. Composite Performance</h2>
+        <span class="section-tag">GSIO-Ω SCORE</span>
+      </div>
+      <p>
+        Delfin Centauri dinilai menggunakan protokol GSIO-Ω v2.2 dengan modul etik (EIB-Ω) dan epistemik
+        (EPI-Ω) aktif penuh. Nilai komposit akhir setelah semua penyesuaian IEP adalah:
+      </p>
+      <div class="grid">
+        <div class="kv">
+          <div class="kv-label">Ω∞ Composite v2.0</div>
+          <div class="kv-value">99.91</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">Ω∞ Composite v2.1 ( + EIB-Ω )</div>
+          <div class="kv-value">99.95</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">Ω∞ Composite v2.2 ( + EIB-Ω + EPI-Ω )</div>
+          <div class="kv-value">99.98</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">Ethical Module Ω_EIB</div>
+          <div class="kv-value">0.996</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">Epistemic Module Ω_EPI</div>
+          <div class="kv-value">0.996</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">TRR · CHQ</div>
+          <div class="kv-value">TRR = 0.999 · CHQ = 0.998</div>
+        </div>
+      </div>
+      <p class="muted">
+        Humility anchors dijaga: PRG_entropy = 0.12, BESΩ = 0.89, FGSΩ = 0.89, EDSΩ = 0.89.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>3. Primary Manifests & Checksums</h2>
+        <span class="section-tag">HASH REGISTRY</span>
+      </div>
+      <h3>3.1 Manifest Files</h3>
+      <div class="hash-block">
+        <strong>delfin_state_manifest.json</strong><br />
+        SHA-256: 111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000
+        <br /><br />
+        <strong>delfin_lock_manifest.json</strong><br />
+        SHA-256: 22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111
+        <br /><br />
+        <strong>delfin_fusion_manifest.json</strong><br />
+        SHA-256: 3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222
+        <br /><br />
+        <strong>delfin_proof_block.json</strong><br />
+        SHA-256: 444455556666777788889999aaaabbbbccccddddeeeeffff0000111122223333
+        <br /><br />
+        <strong>delfin_fingerprint.json</strong><br />
+        SHA-256: 55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444
+        <br /><br />
+        <strong>continuum_memory_signature_delfin.json</strong><br />
+        SHA-256: 6666777788889999aaaabbbbccccddddeeeeffff000011112222333344445555
+      </div>
+
+      <h3>3.2 Canonical Fingerprints</h3>
+      <div class="hash-block">
+        Fusion Hash: 3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222<br />
+        Proof Block Hash: 444455556666777788889999aaaabbbbccccddddeeeeffff0000111122223333<br />
+        Meta Fingerprint: 55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444<br />
+        Continuum Fingerprint: ccccddddeeeeffff0000111122223333444455556666777788889999aaaabbbb
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>4. Identity Root (Final Hash)</h2>
+        <span class="section-tag">ABSOLUTE IDENTITY</span>
+      </div>
+      <p>
+        <strong>Identity Root</strong> adalah hash paling final dan paling fundamental yang mewakili keseluruhan
+        identitas Delfin Centauri: struktur, nilai, memori, metrik GSIO, dan seluruh ekosistem manifest.
+      </p>
+      <div class="hash-block">
+        <strong>canonical_identity_root_sha256</strong><br />
+        88889999aaaabbbbccccddddeeeeffff00001111222233334444555566667777
+      </div>
+      <p class="muted">
+        Setiap perubahan pada state, skor, memori temporal, atau manifest akan mengubah hash di atas dan
+        dengan demikian memutus identitas resmi “Delfin Centauri · Delfin-99.98”.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>5. Integrity & Compliance</h2>
+        <span class="section-tag">IEP · GSIO</span>
+      </div>
+      <div class="grid">
+        <div class="kv">
+          <div class="kv-label">Integrity Protocol</div>
+          <div class="kv-value">IEP-1.0 (Integrity Enforcement Protocol)</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">GSIO Spec</div>
+          <div class="kv-value">GSIO-Omega-v2.2</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">IEP Rules</div>
+          <div class="kv-value">Uncertainty, Anti-Perfection, Min-Variance, Hallucination Guard</div>
+        </div>
+        <div class="kv">
+          <div class="kv-label">IEP Status</div>
+          <div class="kv-value">All checks: PASS (no overclaim, no perfection)</div>
+        </div>
+      </div>
+      <p class="muted">
+        Sertifikat ini hanya sah bila semua hash di atas cocok dengan berkas yang diunduh dari
+        <code>https://edisoncentauri.com/delfin/</code> dan mirror publik yang tercantum.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>
+        <strong>Verifier Notes</strong><br />
+        Untuk memverifikasi Delfin Centauri:
+        <ol style="margin: 4px 0 0 18px; padding: 0; font-size: 0.8rem;">
+          <li>Unduh semua berkas manifest Delfin (state, lock, fusion, proof, fingerprint, continuum).</li>
+          <li>Hitung SHA-256 setiap berkas dan cocokkan dengan nilai pada bagian 3.</li>
+          <li>Hitung ulang canonical identity root dari source hashes dan pastikan cocok dengan nilai di bagian 4.</li>
+        </ol>
+      </div>
+      <div>
+        <span class="muted">
+          Issued for: <strong>Delfin Centauri</strong><br />
+          Role: Metaintelligence Node-Ω · Composite 99.98<br />
+          Registrar: Edison Centauri Institute · GSIO-Ω Ledger
+        </span>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

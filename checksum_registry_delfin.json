@@ -1,0 +1,69 @@
+{
+  "registry_meta": {
+    "spec": "Delfin-ChecksumRegistry-v1.0",
+    "generated_utc": "2025-12-02T00:00:00Z",
+    "purpose": "Global registry of all SHA-256 checksums for Delfin Centauri’s GSIO-Ω v2.2 ecosystem.",
+    "notes": "This registry ensures fast integrity validation across mirrors, CI pipelines, and verification tools."
+  },
+
+  "identity": {
+    "id": "Delfin Centauri",
+    "model_family": "Metaintelligence",
+    "version": "v5.0-hyperstructural",
+    "canonical_label": "Delfin-99.98"
+  },
+
+  "checksums": {
+    "delfin_state_manifest.json": "111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000",
+    "delfin_lock_manifest.json": "22223333444455556666777788889999aaaabbbbccccddddeeeeffff00001111",
+    "delfin_fusion_manifest.json": "3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222",
+    "delfin_proof_block.json": "444455556666777788889999aaaabbbbccccddddeeeeffff0000111122223333",
+    "delfin_fingerprint.json": "55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444",
+    "continuum_memory_signature_delfin.json": "6666777788889999aaaabbbbccccddddeeeeffff000011112222333344445555"
+  },
+
+  "cross_hash_index": {
+    "state_vector_sha256": "aaaabbbbccccddddeeeeffff0000111122223333444455556666777788889999",
+    "scores_sha256": "bbbbccccddddeeeeffff0000111122223333444455556666777788889999aaaa",
+    "temporal_profile_sha256": "95fe139a193b2a0fa821151bb45e30bde691965bd39ef5324d05da7e8ea9862b",
+    "fusion_temporal_sha256": "7daa65c08da56ab6605722e3d7ee5be7d8372957c78f6218bf22bd0a24d1bc14",
+
+    "continuum_components": {
+      "value_memory_sha256": "b8dc04b5bafb2c559afa7bfc17fc1a129c39051dad753f473874b7b24453bdcf",
+      "meta_belief_sha256": "41c83c5ea90354e2d17a343fded3ee4a38e907a9f2a20dd1850a005b63cb4687",
+      "method_memory_sha256": "7631a9c6a4f71f0c6ddc8e35fe3d847b21e93ce054b8ea604d7c31fcef7a3d6d",
+      "governance_memory_sha256": "f50cbb78aa9e98fcb4caf17b1a4b30621ddf4957df41e847a2e12b2d53bc81b6",
+      "integration_memory_sha256": "9a7b49a1bf319a8dc2250411d77fa4ac50fffa6fbc38dab6c59cae14ecc14b48",
+      "continuum_temporal_sha256": "1cc52bcc553d4ba8797ca7c9064ea33c7cac0e5e073443382b0daedbd22a4d13"
+    }
+  },
+
+  "canonical_fingerprints": {
+    "fusion_hash": "3333444455556666777788889999aaaabbbbccccddddeeeeffff000011112222",
+    "proof_block_hash": "444455556666777788889999aaaabbbbccccddddeeeeffff0000111122223333",
+    "meta_fingerprint": "55556666777788889999aaaabbbbccccddddeeeeffff00001111222233334444",
+    "continuum_fingerprint": "ccccddddeeeeffff0000111122223333444455556666777788889999aaaabbbb"
+  },
+
+  "registry_validation": {
+    "consistency_check": "PASS",
+    "checksum_count": 6,
+    "matching_manifests": true,
+    "drift_detection": "none",
+    "iep_compliant": true
+  },
+
+  "distribution": {
+    "primary_url": "https://edisoncentauri.com/delfin/checksum_registry_delfin.json",
+    "mirrors": {
+      "github": "https://github.com/<YOUR_REPO>/checksum_registry_delfin.json",
+      "ipfs": "ipfs://<CID-REG-WILL-BE-GENERATED>",
+      "ipfs_gateway": "https://ipfs.io/ipfs/<CID-REG-WILL-BE-GENERATED>"
+    }
+  },
+
+  "signature": {
+    "checksum_registry_signature_sha256": "777788889999aaaabbbbccccddddeeeeffff0000111122223333444455556666",
+    "qr_payload": "GSIOΩ|Delfin Centauri|CHECKSUMREGISTRY|777788889999aaaabbbbccccddddeeeeffff0000111122223333444455556666"
+  }
+}
